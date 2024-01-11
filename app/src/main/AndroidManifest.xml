@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tractorbuddy_app">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/projectlogo"
+        android:roundIcon="@drawable/projectlogo"
+        android:supportsRtl="true"
+        android:label="Tractor Buddy"
+        android:enableOnBackInvokedCallback="true"
+        android:theme="@style/Theme.TractorBuddy_App">
+        <activity
+            android:name=".AdminViewTractorRentAppliedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Approve_RejectTractorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Approve_RejectLoanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FarmerViewApprovedTractorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewLoanAppliedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FarmerViewApprovedLoanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FarmerApplyTractorRentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FarmerApplyLoanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FarmerApplyLoanActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".FarmerApplyTractorRentActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".FarmerViewProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewTractorsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewBanksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewFarmersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewBankActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewTractorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FarmerMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewFarmerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FarmerLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,67 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Project/TractorBuddy_App/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.3185" />
+        <entry key="..\:/Project/TractorBuddy_App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3185" />
+        <entry key="..\:/Project/TractorBuddy_App/app/src/main/res/drawable/shapeemailid.xml" value="0.1935" />
+        <entry key="..\:/Project/TractorBuddy_App/app/src/main/res/layout/activity_admin_approve_reject_loan.xml" value="0.28940217391304346" />
+        <entry key="..\:/Project/TractorBuddy_App/app/src/main/res/layout/activity_admin_login.xml" value="0.28940217391304346" />
+        <entry key="..\:/Project/TractorBuddy_App/app/src/main/res/layout/activity_admin_main.xml" value="0.28940217391304346" />
+        <entry key="..\:/Project/TractorBuddy_App/app/src/main/res/layout/activity_admin_view_farmers.xml" value="0.28940217391304346" />
+        <entry key="..\:/Project/TractorBuddy_App/app/src/main/res/layout/activity_admin_view_tractors.xml" value="0.28940217391304346" />
+        <entry key="..\:/Project/TractorBuddy_App/app/src/main/res/layout/activity_app_main.xml" value="0.28940217391304346" />
+        <entry key="..\:/Project/TractorBuddy_App/app/src/main/res/layout/activity_farmer_login.xml" value="0.28940217391304346" />
+        <entry key="..\:/Project/TractorBuddy_App/app/src/main/res/layout/activity_farmer_main.xml" value="0.28940217391304346" />
+        <entry key="..\:/Project/TractorBuddy_App/app/src/main/res/layout/activity_main.xml" value="0.28940217391304346" />
+        <entry key="..\:/Project/TractorBuddy_App/app/src/main/res/layout/activity_new_farmer.xml" value="0.28940217391304346" />
+        <entry key="..\:/Project/TractorBuddy_App/app/src/main/res/layout/activity_new_tractor.xml" value="0.28940217391304346" />
+      </map>
+    </option>
+  </component>
+  <component name="NullableNotNullManager">
+    <option name="myDefaultNullable" value="androidx.annotation.Nullable" />
+    <option name="myDefaultNotNull" value="androidx.annotation.NonNull" />
+    <option name="myNullables">
+      <value>
+        <list size="12">
+          <item index="0" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableDecl" />
+          <item index="1" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
+          <item index="2" class="java.lang.String" itemvalue="androidx.annotation.Nullable" />
+          <item index="3" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.Nullable" />
+          <item index="4" class="java.lang.String" itemvalue="com.android.annotations.Nullable" />
+          <item index="5" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
+          <item index="6" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNullable" />
+          <item index="7" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
+          <item index="8" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />
+          <item index="9" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
+          <item index="10" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.Nullable" />
+          <item index="11" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableType" />
+        </list>
+      </value>
+    </option>
+    <option name="myNotNulls">
+      <value>
+        <list size="11">
+          <item index="0" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNonNull" />
+          <item index="1" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.NonNull" />
+          <item index="2" class="java.lang.String" itemvalue="com.android.annotations.NonNull" />
+          <item index="3" class="java.lang.String" itemvalue="androidx.annotation.NonNull" />
+          <item index="4" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullType" />
+          <item index="5" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
+          <item index="6" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullDecl" />
+          <item index="7" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />
+          <item index="8" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
+          <item index="9" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
+          <item index="10" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.NonNull" />
+        </list>
+      </value>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
