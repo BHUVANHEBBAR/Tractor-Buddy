@@ -98,57 +98,6 @@ public class FarmerApplyTractorRentActivity extends AppCompatActivity {
                         System.out.println("Data Access Failed" + error.getMessage());
                     }
                 });
-                /*db.collection("NewTractor").get()
-                        .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-                            @Override
-                            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                                // after getting the data we are calling on success method
-                                // and inside this method we are checking if the received
-                                // query snapshot is empty or not.
-                                if (!queryDocumentSnapshots.isEmpty()) {
-                                    // if the snapshot is not empty we are
-                                    // hiding our progress bar and adding
-                                    // our data in a list.
-                                    List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
-                                    String str = "";
-                                    for (DocumentSnapshot d : list) {
-                                        // after getting this list we are passing
-                                        // that list to our object class.
-                                        NewTractorClass newClass = d.toObject(NewTractorClass.class);
-                                        String ShowDataString = "";
-                                        ShowDataString = "Tractor Name : " + newClass.getTractorName()+
-                                                "\nTractor Type : " + newClass.getTractorType()+
-                                                "\nVehicle Num : " + newClass.getVehicleNum() +
-                                                "\nVehicle Mileage : " + newClass.getMileage() +
-                                                "\nChasis Num : " + newClass.getChasisNum();
-
-                                        if (str.length() == 0) {
-                                            str = str + ShowDataString;
-                                            tractorid =d.getId();
-                                        }
-                                        else {
-                                            str = str + "," + ShowDataString;
-                                            tractorid +=","+d.getId();
-                                        }
-                                    }
-                                    tractorids = tractorid.split(",");
-                                    array = str.split(",");
-                                    ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),
-                                            android.R.layout.simple_list_item_1, android.R.id.text1, array);
-                                    list_view.setAdapter(adapter);
-                                } else {
-                                    // if the snapshot is empty we are displaying a toast message.
-                                    Toast.makeText(getApplicationContext(), "No data found in Database", Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        }).addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                // if we do not get any data or any error we are displaying
-                                // a toast message that we do not get any data
-                                Toast.makeText(getApplicationContext(), "Fail to get the data.", Toast.LENGTH_SHORT).show();
-                            }
-                        });*/
             }
         });
     }

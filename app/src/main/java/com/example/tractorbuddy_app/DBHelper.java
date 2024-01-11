@@ -66,8 +66,6 @@ public class DBHelper {
         mDb.insert(IMAGES_TABLE, null, cv);
     }
 
-    // Get the image from SQLite DB
-    // We will just get the last image we just saved for convenience...
     public byte[] retreiveImageFromDB(String imageid, String imagetype) {
         String selection = IMAGE_ID + " = ? AND "+IMAGE_TYPE +" = ?";
         String[] selectionArgs = {imageid, imagetype};

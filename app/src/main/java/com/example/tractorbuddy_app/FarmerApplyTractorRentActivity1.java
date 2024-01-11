@@ -65,23 +65,6 @@ public class FarmerApplyTractorRentActivity1 extends AppCompatActivity {
         gobackbtn = (Button) findViewById(R.id.gobackbutton);
         calcbtn = (Button) findViewById(R.id.calctotalbutton);
 
-        /*
-        txtnumofdays.setOnKeyListener(new View.OnKeyListener() {
-            @Override
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-                numofdays = txtnumofdays.getText().toString();
-                if(!TextUtils.isEmpty(numofdays))
-                {
-                    int num = Integer.parseInt(numofdays);
-                    totalprice = String.valueOf(num*rent);
-                    txttotalprice.setText(totalprice);
-                }else{
-                    txttotalprice.setText("0");
-                }
-                return true;
-            }
-        });
-        */
         calcbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -137,46 +120,6 @@ public class FarmerApplyTractorRentActivity1 extends AppCompatActivity {
             }
         });
 
-        /*db.collection("NewTractor").get()
-                .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-                    @Override
-                    public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                        // after getting the data we are calling on success method
-                        // and inside this method we are checking if the received
-                        // query snapshot is empty or not.
-                        if (!queryDocumentSnapshots.isEmpty()) {
-                            // if the snapshot is not empty we are
-                            // hiding our progress bar and adding
-                            // our data in a list.
-                            List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
-                            String str = "";
-                            for (DocumentSnapshot d : list) {
-                                // after getting this list we are passing
-                                // that list to our object class.
-                                NewTractorClass newClass = d.toObject(NewTractorClass.class);
-                                if(d.getId().equals(tractorId))
-                                {
-                                    txtName.setText("Tractor Name : " + newClass.getTractorName());
-                                    txtchasisnum.setText("Chassis Num : " + newClass.getChasisNum());
-                                    txtvnum.setText("Vehicle Num : " + newClass.getVehicleNum());
-                                    txtmileage.setText("Mileage : " + newClass.getMileage());
-                                    txttractortype.setText("Tractor Type : " + newClass.getTractorType());
-                                    break;
-                                }
-                            }
-                        } else {
-                            // if the snapshot is empty we are displaying a toast message.
-                            Toast.makeText(getApplicationContext(), "No data found in Database", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        // if we do not get any data or any error we are displaying
-                        // a toast message that we do not get any data
-                        Toast.makeText(getApplicationContext(), "Fail to get the data.", Toast.LENGTH_SHORT).show();
-                    }
-                });*/
 
         applybankbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -241,31 +184,6 @@ public class FarmerApplyTractorRentActivity1 extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Tractor For Rent Inserted Successfully",
                             Toast.LENGTH_LONG).show();
 
-                    /*
-                    Log.d("Click on New Bank", "New Bank");
-                    FirebaseFirestore db = FirebaseFirestore.getInstance();
-                    UUID uuid = UUID.randomUUID();
-                    appliedId = uuid.toString();
-                    NewTractorRentClass newClass = new NewTractorRentClass(userId, appliedId, tractorId, tname,
-                            ttype, vnum, chasisnum, mileage, "Applied");
-
-                    // Add a new document with a generated ID
-                    db.collection("NewTractorRent")
-                            .add(newClass)
-                            .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                                @Override
-                                public void onSuccess(DocumentReference documentReference) {
-                                    Log.d("Success : ", "DocumentSnapshot added with ID: " + documentReference.getId());
-                                    Toast.makeText(getApplicationContext(), "Tractor For Rent has been added to Firebase Firestore", Toast.LENGTH_SHORT).show();
-                                }
-                            })
-                            .addOnFailureListener(new OnFailureListener() {
-                                @Override
-                                public void onFailure(@NonNull Exception e) {
-                                    Log.w("Error : ", "Error adding document", e);
-                                    Toast.makeText(getApplicationContext(), "Tractor For Rent Failed to apply\n" + e, Toast.LENGTH_LONG).show();
-                                }
-                            });*/
                 }
             }
         });

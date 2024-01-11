@@ -325,42 +325,6 @@ public class NewTractorActivity extends AppCompatActivity {
                     dbRef.child(imageId).setValue(newClass);
                     Toast.makeText(getApplicationContext(), "Tractor has been added to Firebase Firestore", Toast.LENGTH_SHORT).show();
                     Log.d("Tractor Saved Success ", "New Tractor");
-                    /*
-                    try{
-                    FileInputStream serviceAccount = new FileInputStream("key.json");
-                    FirebaseOptions options = new FirebaseOptions.Builder().setCredentials(GoogleCredentials.fromStream(serviceAccount))
-                            .setDatabaseUrl("https://yamahaapp-75988-default-rtdb.firebaseio.com")
-                            .build();
-                    FirebaseApp.initializeApp(options);
-                    Toast.makeText(getApplicationContext(), "New User Inserted Successfully",
-                            Toast.LENGTH_LONG).show();
-                    }catch (Exception ex)
-                    {
-                        Log.d("Exception : ", ex.getMessage());
-                    }
-                    */
-                    /*    CollectionReference dbCollection = db.collection("NewTractor");
-                        NewTractorClass newClass =new NewTractorClass(imageId, tname, ttype, vnum, chasisnum, mileage, imageId);
-                        // below method is use to add data to Firebase Firestore.
-
-                        dbCollection.add(newClass).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                            @Override
-                            public void onSuccess(DocumentReference documentReference) {
-                                // after the data addition is successful
-                                // we are displaying a success toast message.
-                                //Log.d("Success : ", "DocumentSnapshot added with ID: " + documentReference.getId());
-                                Toast.makeText(getApplicationContext(), "Tractor has been added to Firebase Firestore", Toast.LENGTH_SHORT).show();
-                                Log.d("Tractor Saved Success ", "New Tractor");
-                            }
-                        }).addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                // this method is called when the data addition process is failed.
-                                // displaying a toast message when data addition is failed.
-                                //Log.w("Error : ", "Error adding document", e);
-                                Toast.makeText(getApplicationContext(), "Fail to add Tractor \n" + e, Toast.LENGTH_SHORT).show();
-                            }
-                        });*/
                     }catch(Exception e)
                     {
                         Log.d("Exception : ", e.getMessage());

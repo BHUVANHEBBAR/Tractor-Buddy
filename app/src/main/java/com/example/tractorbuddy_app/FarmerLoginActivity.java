@@ -123,57 +123,6 @@ public class FarmerLoginActivity extends AppCompatActivity {
                             System.out.println("Data Access Failed" + error.getMessage());
                         }
                     });
-                    /*db.collection("NewFarmer").get()
-                        .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-                            @RequiresApi(api = Build.VERSION_CODES.O)
-                            @Override
-                            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                                // after getting the data we are calling on success method
-                                // and inside this method we are checking if the received
-                                // query snapshot is empty or not.
-                                if (!queryDocumentSnapshots.isEmpty()) {
-                                    // if the snapshot is not empty we are
-                                    // hiding our progress bar and adding
-                                    // our data in a list.
-                                    List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
-                                    String userId = "";
-                                    for (DocumentSnapshot d : list) {
-                                        // after getting this list we are passing
-                                        // that list to our object class.
-                                        NewFarmerClass userClass = d.toObject(NewFarmerClass.class);
-                                        String decData = null;
-                                        try {
-                                            decData = AESCrypt.decrypt(userClass.getPassword());
-                                        } catch (Exception e) {
-                                            e.printStackTrace();
-                                        }
-                                        if (userClass.getUserName().equals(username) && password.equals(userClass.getPassword())) {
-                                            id = d.getId();
-                                            flag = true;
-                                            break;
-                                        }
-                                    }
-                                    if (flag) {
-                                        Toast.makeText(getApplicationContext(), "Farmer Login Success", Toast.LENGTH_SHORT).show();
-                                        Intent intent = new Intent(getApplicationContext(), FarmerMainActivity.class);
-                                        intent.putExtra("Id", id);
-                                        startActivity(intent);
-                                    } else {
-                                        Toast.makeText(getApplicationContext(), "Invalid UserName/Password", Toast.LENGTH_SHORT).show();
-                                    }
-                                } else {
-                                    // if the snapshot is empty we are displaying a toast message.
-                                    Toast.makeText(getApplicationContext(), "No data found in Database", Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        }).addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                // if we do not get any data or any error we are displaying
-                                // a toast message that we do not get any data
-                                Toast.makeText(getApplicationContext(), "Fail to get the data.", Toast.LENGTH_SHORT).show();
-                            }
-                        });*/
                 }
             }
         });

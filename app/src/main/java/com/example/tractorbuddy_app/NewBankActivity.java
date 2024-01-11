@@ -87,29 +87,6 @@ public class NewBankActivity extends AppCompatActivity {
                             Toast.LENGTH_LONG).show();
 
 
-/*                    FirebaseFirestore db = FirebaseFirestore.getInstance();
-                    UUID uuid = UUID.randomUUID();
-                    bankId = uuid.toString();
-
-                    NewBankClass newClass = new NewBankClass(bankId, bankname, branchname, pincode, address, ifsccode);
-
-                    // Add a new document with a generated ID
-                    db.collection("NewBank")
-                            .add(newClass)
-                            .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                                @Override
-                                public void onSuccess(DocumentReference documentReference) {
-                                    Log.d("Success : ", "DocumentSnapshot added with ID: " + documentReference.getId());
-                                    Toast.makeText(getApplicationContext(), "Bank has been added to Firebase Firestore", Toast.LENGTH_SHORT).show();
-                                }
-                            })
-                            .addOnFailureListener(new OnFailureListener() {
-                                @Override
-                                public void onFailure(@NonNull Exception e) {
-                                    Log.w("Error : ", "Error adding document", e);
-                                    Toast.makeText(getApplicationContext(), "Fail to add bank\n" + e, Toast.LENGTH_SHORT).show();
-                                }
-                            });*/
                 }
             }
         });

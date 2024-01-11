@@ -205,24 +205,6 @@ public class NewFarmerActivity extends AppCompatActivity {
                         NewFarmerClass newClass =new NewFarmerClass(userId, firstName, lastName, gender,
                                 emailId, phoneNum, userName, password);
 
-/*
-                        // Add a new document with a generated ID
-                        db.collection("NewFarmer")
-                                .add(newClass)
-                                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                                    @Override
-                                    public void onSuccess(DocumentReference documentReference) {
-                                        Log.d("Success : ", "DocumentSnapshot added with ID: " + documentReference.getId());
-                                        Toast.makeText(getApplicationContext(), "Farmer has been added to Firebase Firestore", Toast.LENGTH_LONG).show();
-                                    }
-                                })
-                                .addOnFailureListener(new OnFailureListener() {
-                                    @Override
-                                    public void onFailure(@NonNull Exception e) {
-                                        Log.w("Error : ", "Error adding document", e);
-                                        Toast.makeText(getApplicationContext(), "Fail to add farmer \n" + e, Toast.LENGTH_LONG).show();
-                                    }
-                                });*/
 
                         FirebaseDatabase database = FirebaseDatabase.getInstance();
                         DatabaseReference dbRef = database.getReference();
@@ -235,53 +217,6 @@ public class NewFarmerActivity extends AppCompatActivity {
                                 Toast.LENGTH_LONG).show();
 
 
-                        /*
-                    try{
-                        FileInputStream serviceAccount =
-                                new FileInputStream("path/to/serviceAccountKey.json");
-
-                        //FirebaseOptions firebaseOptions = new FirebaseOptions.Builder().se
-
-                        FirebaseOptions options = new FirebaseOptions.Builder()
-                                .setCredentials(GoogleCredentials.fromStream(serviceAccount))
-                                .setDatabaseUrl("https://krushiculture-6c06b-default-rtdb.firebaseio.com")
-                                .build();
-
-                        FirebaseApp.initializeApp(options);
-                    Toast.makeText(getApplicationContext(), "New User Inserted Successfully",
-                            Toast.LENGTH_LONG).show();
-                    }catch (Exception ex)
-                    {
-                        Log.d("Exception : ", ex.getMessage());
-                    }*/
-
-                        /*CollectionReference dbCourses = db.collection("NewUser");
-                        UUID uuid=UUID.randomUUID();
-                        userId = uuid.toString();
-                        Log.d("UserId : ", userId);
-                        String key="KrushiCulture";
-                        //String encData = aes.AESencrypt(key.getBytes("UTF-16LE"), password.getBytes("UTF-16LE"));
-                        String encData = AESCrypt.encrypt(password);
-                        // adding our data to our courses object class.
-                        NewPatientClass newUserClass =new NewPatientClass(userId, firstName, lastName, gender,
-                                emailId, phoneNum, userName, encData);
-
-                        // below method is use to add data to Firebase Firestore.
-                        dbCourses.add(newUserClass).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                            @Override
-                            public void onSuccess(DocumentReference documentReference) {
-                                // after the data addition is successful
-                                // we are displaying a success toast message.
-                                Toast.makeText(getApplicationContext(), "User has been added to Firebase Firestore", Toast.LENGTH_SHORT).show();
-                            }
-                        }).addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                // this method is called when the data addition process is failed.
-                                // displaying a toast message when data addition is failed.
-                                Toast.makeText(getApplicationContext(), "Fail to add course \n" + e, Toast.LENGTH_SHORT).show();
-                            }
-                        });*/
                     }catch(Exception e)
                     {
                         Log.d("Exception : ", e.getMessage());

@@ -95,58 +95,6 @@ public class AdminViewLoanAppliedActivity extends AppCompatActivity {
                         System.out.println("Data Access Failed" + error.getMessage());
                     }
                 });
-                /*db.collection("NewBankLoan").get()
-                        .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-                            @Override
-                            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                                // after getting the data we are calling on success method
-                                // and inside this method we are checking if the received
-                                // query snapshot is empty or not.
-                                if (!queryDocumentSnapshots.isEmpty()) {
-                                    // if the snapshot is not empty we are
-                                    // hiding our progress bar and adding
-                                    // our data in a list.
-                                    List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
-                                    String str = "";
-                                    for (DocumentSnapshot d : list) {
-                                        // after getting this list we are passing
-                                        // that list to our object class.
-                                        NewBankLoanClass newClass = d.toObject(NewBankLoanClass.class);
-                                        String ShowDataString = "";
-                                        if(newClass.getStatus().equals("Applied")) {
-                                            ShowDataString = "Bank Name : " + newClass.getBankName() +
-                                                    "\nBank Address  : " + newClass.getAddress() +
-                                                    "\nIFSCCode : " + newClass.getIfsccode() +
-                                                    "\nPincode    : " + newClass.getPincode() +
-                                                    "\nStatus    : " + newClass.getStatus();
-                                            if (str.length() == 0) {
-                                                str = str + ShowDataString;
-                                                loanid=d.getId();
-                                            }
-                                            else {
-                                                str = str + "," + ShowDataString;
-                                                loanid+=","+d.getId();
-                                            }
-                                        }
-                                    }
-                                    array = str.split(",");
-                                    ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),
-                                            android.R.layout.simple_list_item_1, android.R.id.text1, array);
-                                    list_view.setAdapter(adapter);
-                                    loan_ids=loanid.split(",");
-                                } else {
-                                    // if the snapshot is empty we are displaying a toast message.
-                                    Toast.makeText(getApplicationContext(), "No data found in Database", Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        }).addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                // if we do not get any data or any error we are displaying
-                                // a toast message that we do not get any data
-                                Toast.makeText(getApplicationContext(), "Fail to get the data.", Toast.LENGTH_SHORT).show();
-                            }
-                        });*/
             }
         });
     }

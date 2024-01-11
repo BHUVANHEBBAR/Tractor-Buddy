@@ -119,46 +119,6 @@ public class FarmerApplyLoanActivity1 extends AppCompatActivity {
             }
         });
 
-        /*db.collection("NewBank").get()
-                .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-                    @Override
-                    public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                        // after getting the data we are calling on success method
-                        // and inside this method we are checking if the received
-                        // query snapshot is empty or not.
-                        if (!queryDocumentSnapshots.isEmpty()) {
-                            // if the snapshot is not empty we are
-                            // hiding our progress bar and adding
-                            // our data in a list.
-                            List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
-                            String str = "";
-                            for (DocumentSnapshot d : list) {
-                                // after getting this list we are passing
-                                // that list to our object class.
-                                NewBankClass newClass = d.toObject(NewBankClass.class);
-                                if(d.getId().equals(bankId))
-                                {
-                                    txtBankName.setText("Bank Name : " + newClass.getBankName());
-                                    txtAddress.setText("Address : " + newClass.getAddress());
-                                    txtPincode.setText("Pincode : " + newClass.getPincode());
-                                    txtBranchName.setText("Branch Name : " + newClass.getBranchName());
-                                    txtIFSCcode.setText("IFSCCode : " + newClass.getIfsccode());
-                                    break;
-                                }
-                            }
-                        } else {
-                            // if the snapshot is empty we are displaying a toast message.
-                            Toast.makeText(getApplicationContext(), "No data found in Database", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        // if we do not get any data or any error we are displaying
-                        // a toast message that we do not get any data
-                        Toast.makeText(getApplicationContext(), "Fail to get the data.", Toast.LENGTH_SHORT).show();
-                    }
-                });*/
 
         applybankbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -196,29 +156,6 @@ public class FarmerApplyLoanActivity1 extends AppCompatActivity {
                             Toast.LENGTH_LONG).show();
 
                     Log.d("Click on New Bank", "New Bank");
-                    /*FirebaseFirestore db = FirebaseFirestore.getInstance();
-                    UUID uuid = UUID.randomUUID();
-                    loanId = uuid.toString();
-
-                    NewBankLoanClass newClass = new NewBankLoanClass(loanId, bankId, bankname, branchname, pincode, address, ifsccode,userId, "Applied");
-
-                    // Add a new document with a generated ID
-                    db.collection("NewBankLoan")
-                            .add(newClass)
-                            .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                                @Override
-                                public void onSuccess(DocumentReference documentReference) {
-                                    Log.d("Success : ", "DocumentSnapshot added with ID: " + documentReference.getId());
-                                    Toast.makeText(getApplicationContext(), "Bank Loan has been added to Firebase Firestore", Toast.LENGTH_SHORT).show();
-                                }
-                            })
-                            .addOnFailureListener(new OnFailureListener() {
-                                @Override
-                                public void onFailure(@NonNull Exception e) {
-                                    Log.w("Error : ", "Error adding document", e);
-                                    Toast.makeText(getApplicationContext(), "Bank Loan Failed to apply\n" + e, Toast.LENGTH_LONG).show();
-                                }
-                            });*/
                 }
             }
         });
